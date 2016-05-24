@@ -13,6 +13,8 @@
 		0137865D1CEC7C9C005B91A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0137865B1CEC7C9C005B91A5 /* Main.storyboard */; };
 		0137865F1CEC7C9C005B91A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0137865E1CEC7C9C005B91A5 /* Assets.xcassets */; };
 		013786621CEC7C9C005B91A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 013786601CEC7C9C005B91A5 /* LaunchScreen.storyboard */; };
+		013786711CEC7F62005B91A5 /* ZXSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0137866F1CEC7F62005B91A5 /* ZXSecondViewController.m */; };
+		013786721CEC7F62005B91A5 /* ZXSecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 013786701CEC7F62005B91A5 /* ZXSecondViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		0137865E1CEC7C9C005B91A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		013786611CEC7C9C005B91A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		013786631CEC7C9C005B91A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0137866E1CEC7F62005B91A5 /* ZXSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXSecondViewController.h; sourceTree = "<group>"; };
+		0137866F1CEC7F62005B91A5 /* ZXSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXSecondViewController.m; sourceTree = "<group>"; };
+		013786701CEC7F62005B91A5 /* ZXSecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZXSecondViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +67,9 @@
 				013786561CEC7C9C005B91A5 /* AppDelegate.m */,
 				013786581CEC7C9C005B91A5 /* ViewController.h */,
 				013786591CEC7C9C005B91A5 /* ViewController.m */,
+				0137866E1CEC7F62005B91A5 /* ZXSecondViewController.h */,
+				0137866F1CEC7F62005B91A5 /* ZXSecondViewController.m */,
+				013786701CEC7F62005B91A5 /* ZXSecondViewController.xib */,
 				0137865B1CEC7C9C005B91A5 /* Main.storyboard */,
 				0137865E1CEC7C9C005B91A5 /* Assets.xcassets */,
 				013786601CEC7C9C005B91A5 /* LaunchScreen.storyboard */,
@@ -105,6 +113,7 @@
 		013786471CEC7C9B005B91A5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = ZX;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = QingDaoShangTong;
 				TargetAttributes = {
@@ -136,6 +145,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				013786721CEC7F62005B91A5 /* ZXSecondViewController.xib in Resources */,
 				013786621CEC7C9C005B91A5 /* LaunchScreen.storyboard in Resources */,
 				0137865F1CEC7C9C005B91A5 /* Assets.xcassets in Resources */,
 				0137865D1CEC7C9C005B91A5 /* Main.storyboard in Resources */,
@@ -149,6 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				013786711CEC7F62005B91A5 /* ZXSecondViewController.m in Sources */,
 				0137865A1CEC7C9C005B91A5 /* ViewController.m in Sources */,
 				013786571CEC7C9C005B91A5 /* AppDelegate.m in Sources */,
 				013786541CEC7C9B005B91A5 /* main.m in Sources */,
@@ -264,6 +275,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "代理传值/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "vshoutao.com.----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -275,6 +287,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "代理传值/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "vshoutao.com.----";
 				PRODUCT_NAME = "$(TARGET_NAME)";

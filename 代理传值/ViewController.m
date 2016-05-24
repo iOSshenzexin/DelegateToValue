@@ -7,8 +7,10 @@
 //
 
 #import "ViewController.h"
-
-@interface ViewController ()
+#import "ZXSecondViewController.h"
+@interface ViewController ()<ZXChangeValueDelegate>
+@property (weak, nonatomic) IBOutlet UILabel *lbl;
+- (IBAction)btnClicked:(id)sender;
 
 @end
 
@@ -16,12 +18,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    ZXSecondViewController *vc = [ZXSecondViewController sharedViewController];
+    vc.delegate = self;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)btnClicked:(id)sender {
+    [self presentViewController:[ZXSecondViewController sharedViewController] animated:YES completion:nil];
+    
+}
+
+-(void)passValueToFrontPage:(ZXSecondViewController *)vc{
+    self.lbl.text = [NSString stringWithFormat:@"%d",vc.number];
 }
 
 @end
